@@ -13,5 +13,5 @@ go_rules_dependencies()
 
 go_register_toolchains(
     version = "1.19.3",
-    # experiments = ["boringcrypto"],
+    experiments = ["boringcrypto"],
 )
