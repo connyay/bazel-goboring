@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/connyay/bazel-goboring/boring"
+	"crypto/boring"
 )
 
 func main() {
