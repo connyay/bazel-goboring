@@ -1,0 +1,11 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "boring",
+    srcs = [
+        "boring.go",
+        "notboring.go",
+    ],
+    importpath = "github.com/connyay/bazel-goboring/boring",
+    visibility = ["//:__subpackages__"],
+)
