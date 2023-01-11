@@ -12,6 +12,7 @@ go_library(
 
 go_binary(
     name = "bin",
+    cgo = True,
     embed = [":lib"],
     visibility = ["//visibility:public"],
 )
