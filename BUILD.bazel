@@ -12,8 +12,10 @@ go_library(
 
 go_binary(
     name = "bin",
-    # cgo = True,
-    gotags = ["goexperiment.boringcrypto"],
     embed = [":lib"],
+    # cgo = True,
+    goarch = "amd64",
+    goos = "linux",
+    gotags = ["goexperiment.boringcrypto"],
     visibility = ["//visibility:public"],
 )
