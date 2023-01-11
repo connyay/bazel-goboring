@@ -7,7 +7,7 @@ package boring
 import "log"
 
 func init() {
-	log.Printf("----- in boring.go -----")
+	log.Printf("----- in notboring.go -----")
 }
 
 // Enabled reports whether BoringCrypto handles supported crypto operations.
