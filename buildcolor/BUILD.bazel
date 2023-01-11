@@ -1,0 +1,11 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "buildcolor",
+    srcs = [
+        "red.go",
+        "blue.go",
+    ],
+    importpath = "github.com/connyay/bazel-goboring/buildcolor",
+    visibility = ["//:__subpackages__"],
+)
