@@ -1,4 +1,4 @@
-//go:build boringcrypto
+//go:build goexperiment.boringcrypto
 
 package boring
 

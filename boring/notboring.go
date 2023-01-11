@@ -1,4 +1,4 @@
-//go:build !boringcrypto
+//go:build !goexperiment.boringcrypto
 
 // Package boring is a very thin wrapper around crypto/boring that has the negative build tag to be
 // IDE friendly.
