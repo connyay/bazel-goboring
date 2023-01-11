@@ -7,14 +7,13 @@ go_library(
     visibility = ["//visibility:private"],
     deps = [
         "//boring",
-        "//buildcolor",
     ],
 )
 
 go_binary(
     name = "bin",
     cgo = True,
-    gotags = ["goexperiment.boringcrypto", "red"],
+    gotags = ["goexperiment.boringcrypto"],
     embed = [":lib"],
     visibility = ["//visibility:public"],
 )
