@@ -14,6 +14,7 @@ go_binary(
     name = "bin",
     embed = [":lib"],
     # cgo = True,
+    pure = "off",
     goarch = "amd64",
     goos = "linux",
     gotags = ["goexperiment.boringcrypto"],
