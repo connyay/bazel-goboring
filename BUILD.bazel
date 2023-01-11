@@ -13,6 +13,7 @@ go_library(
 go_binary(
     name = "bin",
     cgo = True,
+    gotags = ["boringcrypto"],
     embed = [":lib"],
     visibility = ["//visibility:public"],
 )
